@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_s;
+using System;
 namespace OOP_Concepts
 {   class TypesOfMethods
     {
@@ -11,9 +12,9 @@ namespace OOP_Concepts
             Console.WriteLine(c);
         }
         //non-values return methood with parameter
-        public void Add01(int a,int b)
+        public void Add01(int a,int b,out int c)             //types of parameters
         {
-            int  c;
+           
             c = a + b;
             Console.WriteLine(c);
         }
@@ -26,7 +27,7 @@ namespace OOP_Concepts
             return a - b;
         }
         //values return methood with parameter
-        public int Sub01(int a,int b)
+        public int Sub01(int a=5,int b=6)                  //parameter with default value
         {
            
 
@@ -35,14 +36,23 @@ namespace OOP_Concepts
     }
     class program
     {
-        static void Main(String[] args)
+       static void Main(String[] args)
         {
             TypesOfMethods T = new TypesOfMethods();
+            userdefinedclass U = new userdefinedclass();
+            ParaConDemo Para = new ParaConDemo(85);          //we can give parameter to the explicite constructor
+            ParaConDemo Para01 = new ParaConDemo(90);
+             ParaConDemo Para02 = new ParaConDemo(100);
 
             // T.Add();
             // T.Add01(45,5);
             //Console.WriteLine(T.Sub());
-            Console.WriteLine(T.Sub01(40,10));
+            // Console.WriteLine(T.Sub01(2,1));
+
+            // Console.WriteLine(U.Id);
+            // U.Fullname();
+
+
         }
 
 
