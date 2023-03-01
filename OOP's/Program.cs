@@ -36,7 +36,7 @@ namespace OOP_Concepts
     }
     class program
     {
-       static void Main(String[] args)
+      /* static void Main(String[] args)
         {
             TypesOfMethods T = new TypesOfMethods();
             userdefinedclass U = new userdefinedclass();
@@ -53,7 +53,7 @@ namespace OOP_Concepts
             // U.Fullname();
 
 
-        }
+        }*/
 
 
     }
