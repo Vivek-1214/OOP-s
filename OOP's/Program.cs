@@ -1,5 +1,7 @@
-﻿using OOP_s;
+﻿using OOP_Employees;
+using OOP_Student;
 using System;
+using OOP_s.F1;
 namespace OOP_Concepts
 {   class TypesOfMethods
     {
@@ -36,24 +38,81 @@ namespace OOP_Concepts
     }
     class program
     {
-      /* static void Main(String[] args)
+       static void Main(String[] args)
         {
-            TypesOfMethods T = new TypesOfMethods();
-            userdefinedclass U = new userdefinedclass();
-            ParaConDemo Para = new ParaConDemo(85);          //we can give parameter to the explicite constructor
-            ParaConDemo Para01 = new ParaConDemo(90);
-             ParaConDemo Para02 = new ParaConDemo(100);
+            /*  TypesOfMethods T = new TypesOfMethods();
+              ParaConDemo Para = new ParaConDemo(85);          //we can give parameter to the explicite constructor
+              ParaConDemo Para01 = new ParaConDemo(90);
+               ParaConDemo Para02 = new ParaConDemo(100);
+              class1 c1 = new class1();
+              // T.Add();
+              // T.Add01(45,5);
+              //Console.WriteLine(T.Sub());
+              // Console.WriteLine(T.Sub01(2,1));
 
-            // T.Add();
-            // T.Add01(45,5);
-            //Console.WriteLine(T.Sub());
-            // Console.WriteLine(T.Sub01(2,1));
-
-            // Console.WriteLine(U.Id);
-            // U.Fullname();
+              // Console.WriteLine(U.Id);
+              // U.Fullname();*/
 
 
-        }*/
+            //Class1 c1 = new Class1();
+            //c1.Add();
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                    // Employee//
+
+            Employee Id;        // class variable
+
+           /* Employee Employee01 = new Employee();   //objectb of class
+            Employee01.Id = 1;
+            Employee01.Name  = "vivek";
+            Employee01.Gender = "male";
+
+            Console.WriteLine("Employee1 id = " + Employee01.Id);
+            Console.WriteLine("Employee1 name = " + Employee01.Name);
+            Console.WriteLine("Employee1 gender = " + Employee01.Gender);
+            Console.WriteLine("-------------------------------------------------------------------------------");
+
+            Employee Employee02 = new Employee();
+
+            Console.WriteLine("enter employee Id ");
+            Employee02.Id =Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter employee Name ");
+            Employee02.Name  = Console.ReadLine();
+
+            Console.WriteLine("enter employee Gender ");
+            Employee02.Gender  = Console.ReadLine();
+
+            Console.WriteLine("Employee2 id = " + Employee02.Id);
+            Console.WriteLine("Employee2 name = " + Employee02.Name);
+            Console.WriteLine("Employee2 gender = " + Employee02.Gender);
+            Console.WriteLine("-------------------------------------------------------------------------------");
+
+            Employee Employee03= new Employee();
+            Employee03.GetData();
+            Employee03.ShowData();
+            Console.WriteLine("-------------------------------------------------------------------------------");*/
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                //STUDENTS//
+
+            Students students1 = new Students();
+            students1.GetData();
+            students1.ShowData();
+            Console.WriteLine("-------------------------------------------------------------------------------");
+            Students students2 = new Students();
+            students1.GetData();
+            students1.ShowData();
+            Console.WriteLine("-------------------------------------------------------------------------------");
+            Students students3 = new Students();
+            students1.GetData();
+            students1.ShowData();
+            Console.WriteLine("-------------------------------------------------------------------------------");
+            Students students4 = new Students();
+            students1.GetData();
+            students1.ShowData();
+            Console.WriteLine("-------------------------------------------------------------------------------");
+                ;
+
+        }
 
 
     }

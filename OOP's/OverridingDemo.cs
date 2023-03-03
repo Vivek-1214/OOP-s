@@ -57,7 +57,7 @@ namespace OOP_s
     }
     class exec1
     {
-        static void Main()
+      /*  static void Main()
         {
             OverridingDemo O = new OverridingDemo();
             O.add();
@@ -67,6 +67,6 @@ namespace OOP_s
             //child c = new child();
             // c.add();
 
-        }
+        }*/
     }
 }
