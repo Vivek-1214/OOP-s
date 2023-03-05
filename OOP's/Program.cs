@@ -3,6 +3,8 @@ using OOP_Employees;
 using OOP_Student;
 using System;
 using OOP_s.F1;
+using System.Security.Cryptography.X509Certificates;
+
 namespace OOP_Concepts
 {
     class TypesOfMethods
@@ -38,10 +40,39 @@ namespace OOP_Concepts
             return a - b;
         }*/
     }
-    class program
+  public   class program
     {
+                                                         //STATIC AND NON-STATIC METHODS ACCECIBILITY//
+
+    /*  public static  int global; //local=1
+        public void demo1()
+        {
+            
+            int local;
+            global = 1;
+            Class1 c1 = new Class1();
+            c1.Add2();
+
+            Class1.sub1();
+        }
+        static void demo2()
+        {
+           // local = 2;
+            global = 2;
+            Class1 c1 = new Class1();
+            c1.Add2();
+
+            Class1.sub1();
+        }*/
         static void Main(String[] args)
         {
+           
+
+
+
+
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             /*  TypesOfMethods T = new TypesOfMethods();
               ParaConDemo Para = new ParaConDemo(85);          //we can give parameter to the explicite constructor
               ParaConDemo Para01 = new ParaConDemo(90);
@@ -116,10 +147,12 @@ namespace OOP_Concepts
 
             // IinterfaceDemo I = new IinterfaceDemo();            // we cannot create the object of Interface
 
-            child1 c1 = new child1();
+           /* child1 c1 = new child1();
             c1.mul(10, 2);
             c1.div (10, 2);
-            c1.rem (10, 2);
+            c1.rem (10, 2);*/
+
+
         }
 
 

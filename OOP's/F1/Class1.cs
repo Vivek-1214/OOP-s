@@ -8,9 +8,28 @@ namespace OOP_s.F1
 {
     internal class Class1
     {
-        public void Add()
+        public void Add1()
         {
-            Console.WriteLine("thise is a folder under namespace");
+            Add2();
+            sub1();
+        }
+
+        public void Add2()
+        {
+
+        }
+
+        static void sub1()
+        {
+
+        }
+
+        static void sub2()
+        {
+            Class1 c1 = new Class1();
+            sub1();
+            c1.Add2();
+
         }
     }
 }
