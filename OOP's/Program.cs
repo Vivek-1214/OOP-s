@@ -1,4 +1,6 @@
-﻿using OOP_Abstracttion;
+﻿using OOP_Methods;
+using OOP_Abstracttion;
+//using OOP_Struct;
 using OOP_Employees;
 using OOP_Student;
 using System;
@@ -42,37 +44,62 @@ namespace OOP_Concepts
     }
   public   class program
     {
-                                                         //STATIC AND NON-STATIC METHODS ACCECIBILITY//
+        //STATIC AND NON-STATIC METHODS ACCECIBILITY//
 
-    /*  public static  int global; //local=1
-        public void demo1()
-        {
-            
-            int local;
-            global = 1;
-            Class1 c1 = new Class1();
-            c1.Add2();
+        /*  public static  int global; //local=1
+            public void demo1()
+            {
 
-            Class1.sub1();
-        }
-        static void demo2()
-        {
-           // local = 2;
-            global = 2;
-            Class1 c1 = new Class1();
-            c1.Add2();
+                int local;
+                global = 1;
+                Class1 c1 = new Class1();
+                c1.Add2();
 
-            Class1.sub1();
-        }*/
+                Class1.sub1();
+            }
+            static void demo2()
+            {
+               // local = 2;
+                global = 2;
+                Class1 c1 = new Class1();
+                c1.Add2();
+
+                Class1.sub1();
+            }*/
+
+    
         static void Main(String[] args)
         {
-           
+            //TYPES OF METHODS USING PARAMETERES
+            // stDemo d = new stDemo();
+            // d.Print();
+
+             MethodsDemo MethodsDemo1 = new MethodsDemo();
+
+            //  MethodsDemo1.num1 = 25;
+            // MethodsDemo1.num2 = 5;
+
+            // MethodsDemo1.mul(10, 2, out int c);
+
+            int result=0;
+            MethodsDemo1.divsum(10 , 2, ref result);
 
 
 
+            //  MethodsDemo MethodsDemo2 = new MethodsDemo();
+            //MethodsDemo2.add();
+            // MethodsDemo2.add(45,5);
+
+            // MethodsDemo MethodsDemo3 = new MethodsDemo();
+            //MethodsDemo3.sub(MethodsDemo2);
+
+            // MethodsDemo MethodsDemo4 = new MethodsDemo();
+            // MethodsDemo4.div1(MethodsDemo1);
 
 
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
             /*  TypesOfMethods T = new TypesOfMethods();
               ParaConDemo Para = new ParaConDemo(85);          //we can give parameter to the explicite constructor
               ParaConDemo Para01 = new ParaConDemo(90);
@@ -91,7 +118,7 @@ namespace OOP_Concepts
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             // Employee//
 
-          //  Employee Id;        // class variable
+            //  Employee Id;        // class variable
 
             /* Employee Employee01 = new Employee();   //objectb of class
              Employee01.Id = 1;
@@ -141,16 +168,16 @@ namespace OOP_Concepts
 
             // AbstractionDemo A = new AbstractionDemo();       //we cannot create the object of abstract class
 
-           /* child c = new child();
-            Console.WriteLine(c.add(10,5));
-            Console.WriteLine(c.sub(10,5));*/
+            /* child c = new child();
+             Console.WriteLine(c.add(10,5));
+             Console.WriteLine(c.sub(10,5));*/
 
             // IinterfaceDemo I = new IinterfaceDemo();            // we cannot create the object of Interface
 
-           /* child1 c1 = new child1();
-            c1.mul(10, 2);
-            c1.div (10, 2);
-            c1.rem (10, 2);*/
+            /* child1 c1 = new child1();
+             c1.mul(10, 2);
+             c1.div (10, 2);
+             c1.rem (10, 2);*/
 
 
         }
