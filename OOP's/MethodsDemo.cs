@@ -13,7 +13,6 @@ namespace OOP_Methods
         public int num1 { get; set; }
         public int num2 { get; set; }
 
-        
         public void add()               //method without parameter
         {
             int result = num1 + num2;
@@ -41,20 +40,7 @@ namespace OOP_Methods
 
         }
 
-        //TYPES OF PARAMETERES
-
-        public void mul(int a,int b ,out int c)     //output parameter
-        {
-            c = a * b;
-            Console.WriteLine($"multiplication of a and b is = {c}");
-        }
-
-       
-        public void divsum(int x, int y, ref int result)  //input-output parameter
-        {
-            result = x / y;
-            Console.WriteLine($"division of x and y is = {result}");
-        }
+      
 
 
 

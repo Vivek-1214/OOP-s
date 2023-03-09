@@ -1,4 +1,6 @@
-﻿using OOP_Methods;
+﻿using OOP_CallByValues_CallByReference;
+using OOP_parameter;
+using OOP_Methods;
 using OOP_Abstracttion;
 //using OOP_Struct;
 using OOP_Employees;
@@ -11,39 +13,47 @@ namespace OOP_Concepts
 {
     class TypesOfMethods
     {
+     
+
+
         //non-values return methood without parameter
 
-       /* public void Add()
-        {
-            int a = 10, b = 15, c;
-            c = a + b;
-            Console.WriteLine(c);*/
+        /* public void Add()
+         {
+             int a = 10, b = 15, c;
+             c = a + b;
+             Console.WriteLine(c);*/
         //non-values return methood with parameter
-       /* public void Add01(int a, int b, out int c)             //types of parameters
-        {
+        /* public void Add01(int a, int b, out int c)             //types of parameters
+         {
 
-            c = a + b;
-            Console.WriteLine(c);
-        }*/
+             c = a + b;
+             Console.WriteLine(c);
+         }*/
 
         //values return methood without parameter
 
-      /*  public int Sub()
-        {
-            int a = 5, b = 3;
+        /*  public int Sub()
+          {
+              int a = 5, b = 3;
 
-            return a - b;
-        }*/
+              return a - b;
+          }*/
         //values return methood with parameter
-       /* public int Sub01(int a = 5, int b = 6)                  //parameter with default value
-        {
+        /* public int Sub01(int a = 5, int b = 6)                  //parameter with default value
+         {
 
 
-            return a - b;
-        }*/
+             return a - b;
+         }*/
     }
   public   class program
     {
+       static int num1 = 100;
+      static int num2 = 20;
+        static int result1 = 20;
+
+
         //STATIC AND NON-STATIC METHODS ACCECIBILITY//
 
         /*  public static  int global; //local=1
@@ -67,22 +77,57 @@ namespace OOP_Concepts
                 Class1.sub1();
             }*/
 
-    
+
         static void Main(String[] args)
         {
+
+            // CallByValues_CallByReference
+
+            CallByValues_CallByReference CallByValues_CallByReference = new CallByValues_CallByReference();
+
+           // Console.WriteLine($" befor calling fun num1= {num1} and num2= {num2}");
+             //CallByValues_CallByReference.CallByValues(num1,num2);
+            //Console.WriteLine($" =aftercalling fun num1= {num1} and num2= {num2}");
+
+
+            Console.WriteLine($" befor calling fun num1= {num1} and num2= {num2}");
+            CallByValues_CallByReference.CallByreference(ref num1,ref num2);
+            Console.WriteLine($" =after calling fun num1= {num1} and num2= {num2}");
+
+
+
+
+
+
+
+
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //Types of parameters
+
+            //formal and actual paframeter
+
+          //  parameterDemo parameterDemo = new parameterDemo();
+            //  parameterDemo.add1(num1,num2);                               //num1 and num2 is actual parameteres
+            // parameterDemo.sub1(num1, num2, out int result2);                               //num1 and num2 is actual parameteres
+            // parameterDemo.div1(num1, num2, ref result1);
+
+           // Console.WriteLine(parameterDemo.ArithmeticOps(num1, num2, out int sub, out int mul, out int div));
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //TYPES OF METHODS USING PARAMETERES
             // stDemo d = new stDemo();
             // d.Print();
 
-             MethodsDemo MethodsDemo1 = new MethodsDemo();
+            //  MethodsDemo MethodsDemo1 = new MethodsDemo();
 
             //  MethodsDemo1.num1 = 25;
             // MethodsDemo1.num2 = 5;
 
             // MethodsDemo1.mul(10, 2, out int c);
 
-            int result=0;
-            MethodsDemo1.divsum(10 , 2, ref result);
+           // int result=0;
+           // MethodsDemo1.divsum(10 , 2, ref result);
 
 
 

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOP_Struct
 {
-   /* struct stDemo
+  struct stDemo
     {
-        public int num = 1;
+        /*  public int num = 1;
         int num1 { get; set; }
         
 
@@ -16,7 +16,7 @@ namespace OOP_Struct
         {
             Console.WriteLine("thise is a structure");
         }
+        */
 
-
-    }*/
+    }
 }
