@@ -1,4 +1,5 @@
-﻿using OOP_CallByValues_CallByReference;
+﻿using OOP_Destructor;
+using OOP_CallByValues_CallByReference;
 using OOP_parameter;
 using OOP_Methods;
 using OOP_Abstracttion;
@@ -79,42 +80,50 @@ namespace OOP_Concepts
 
 
         static void Main(String[] args)
-        {
+        {       //DESTRUCTOR
 
+                    Demo Demo1=new Demo ();
+                    Demo Demo2 = new Demo();
+                   Demo Demo3 = new Demo();
+
+            Demo1 = null;Demo2 = null;GC.Collect();
+
+                      Console.ReadLine();
+
+
+
+
+
+
+
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             // CallByValues_CallByReference
 
-            CallByValues_CallByReference CallByValues_CallByReference = new CallByValues_CallByReference();
+            //  CallByValues_CallByReference CallByValues_CallByReference = new CallByValues_CallByReference();
 
-           // Console.WriteLine($" befor calling fun num1= {num1} and num2= {num2}");
-             //CallByValues_CallByReference.CallByValues(num1,num2);
+            // Console.WriteLine($" befor calling fun num1= {num1} and num2= {num2}");
+            //CallByValues_CallByReference.CallByValues(num1,num2);
             //Console.WriteLine($" =aftercalling fun num1= {num1} and num2= {num2}");
 
 
-            Console.WriteLine($" befor calling fun num1= {num1} and num2= {num2}");
-            CallByValues_CallByReference.CallByreference(ref num1,ref num2);
-            Console.WriteLine($" =after calling fun num1= {num1} and num2= {num2}");
-
-
-
-
-
-
-
-
+            // Console.WriteLine($" befor calling fun num1= {num1} and num2= {num2}");
+            //  CallByValues_CallByReference.CallByreference(ref num1,ref num2);
+            // Console.WriteLine($" =after calling fun num1= {num1} and num2= {num2}");
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             //Types of parameters
 
             //formal and actual paframeter
 
-          //  parameterDemo parameterDemo = new parameterDemo();
+            //  parameterDemo parameterDemo = new parameterDemo();
             //  parameterDemo.add1(num1,num2);                               //num1 and num2 is actual parameteres
             // parameterDemo.sub1(num1, num2, out int result2);                               //num1 and num2 is actual parameteres
             // parameterDemo.div1(num1, num2, ref result1);
 
-           // Console.WriteLine(parameterDemo.ArithmeticOps(num1, num2, out int sub, out int mul, out int div));
+            // Console.WriteLine(parameterDemo.ArithmeticOps(num1, num2, out int sub, out int mul, out int div));
 
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //TYPES OF METHODS USING PARAMETERES
             // stDemo d = new stDemo();
             // d.Print();
@@ -126,8 +135,8 @@ namespace OOP_Concepts
 
             // MethodsDemo1.mul(10, 2, out int c);
 
-           // int result=0;
-           // MethodsDemo1.divsum(10 , 2, ref result);
+            // int result=0;
+            // MethodsDemo1.divsum(10 , 2, ref result);
 
 
 
