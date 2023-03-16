@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OOP_s
-{
+{  //Constructor-- it is used to initialized the values of a feild or class
     internal class ConDemo
     {
           //differnce bet method and constructor

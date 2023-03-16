@@ -79,16 +79,16 @@ namespace OOP_Concepts
             }*/
 
 
-        static void Main(String[] args)
-        {       //DESTRUCTOR
+        //static void Main(String[] args)
+        //{       //DESTRUCTOR
 
-                    Demo Demo1=new Demo ();
-                    Demo Demo2 = new Demo();
-                   Demo Demo3 = new Demo();
+                //    Demo Demo1=new Demo ();
+                 //   Demo Demo2 = new Demo();
+                 //  Demo Demo3 = new Demo();
 
-            Demo1 = null;Demo2 = null;GC.Collect();
+            //Demo1 = null;Demo2 = null;GC.Collect();
 
-                      Console.ReadLine();
+                    //  Console.ReadLine();
 
 
 
@@ -234,7 +234,7 @@ namespace OOP_Concepts
              c1.rem (10, 2);*/
 
 
-        }
+      //  }
 
 
     }
