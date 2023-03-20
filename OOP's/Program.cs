@@ -1,4 +1,6 @@
 ﻿using OOP_Destructor;
+using OOP_ConstructorDemo1;
+ using OOP_ConstructorDemo2;
 using OOP_CallByValues_CallByReference;
 using OOP_parameter;
 using OOP_Methods;
@@ -14,7 +16,7 @@ namespace OOP_Concepts
 {
     class TypesOfMethods
     {
-     
+
 
 
         //non-values return methood without parameter
@@ -48,10 +50,10 @@ namespace OOP_Concepts
              return a - b;
          }*/
     }
-  public   class program
+    public class program
     {
-       static int num1 = 100;
-      static int num2 = 20;
+        static int num1 = 100;
+        static int num2 = 20;
         static int result1 = 20;
 
 
@@ -79,22 +81,57 @@ namespace OOP_Concepts
             }*/
 
 
-        //static void Main(String[] args)
-        //{       //DESTRUCTOR
+        static void Main(String[] args)
 
-                //    Demo Demo1=new Demo ();
-                 //   Demo Demo2 = new Demo();
-                 //  Demo Demo3 = new Demo();
+
+
+        {
+            //CONSTRUCTOR DEMO 01//
+           // ConDemo1 ConDemo1 = new ConDemo1();
+          //  ConDemo1 ConDemo2 = new ConDemo1(02,"ram",23000);
+          // ConDemo1 ConDemo3 = new ConDemo1(03,"savita",1000);
+
+           // ConDemo1 Copycon = new ConDemo1(ConDemo3);
+            //  ConDemo1.show();
+            // ConDemo2.show();
+            // ConDemo3.show();
+            // Copycon.show();
+
+
+            //CONSTRUCTOR DEMO 02//
+
+            patients patient1 = new patients();
+
+            patients patient2 = new patients(02,"anna","eids");
+            patients patient3 = new patients(03,"ramesh","dengue");
+
+            patients copy1 = new patients(patient2);
+            patients copy2 = new patients(patient3);
+            // patient1.Display();
+            //patient2.Display();
+            //patient3.Display();
+            copy1.Display();
+            copy2.Display();
+
+
+
+
+
+
+
+
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////
+            //DESTRUCTOR
+
+            //    Demo Demo1=new Demo ();
+            //   Demo Demo2 = new Demo();
+            //  Demo Demo3 = new Demo();
 
             //Demo1 = null;Demo2 = null;GC.Collect();
 
-                    //  Console.ReadLine();
-
-
-
-
-
-
+            //  Console.ReadLine();
 
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -153,6 +190,7 @@ namespace OOP_Concepts
 
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
             /*  TypesOfMethods T = new TypesOfMethods();
               ParaConDemo Para = new ParaConDemo(85);          //we can give parameter to the explicite constructor
@@ -234,10 +272,11 @@ namespace OOP_Concepts
              c1.rem (10, 2);*/
 
 
-      //  }
+            //  }
+
+
+        }
 
 
     }
-
-
 }

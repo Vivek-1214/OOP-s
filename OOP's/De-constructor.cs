@@ -36,7 +36,7 @@ namespace OOP_De_constructor
             salary = this.salary;
         }
 
-        static void Main()
+       /* static void Main()
         {
             Employee Employee = new Employee(01,"ram",18,22000);
             (int id, String name, int age, double salary) =Employee;
@@ -49,7 +49,7 @@ namespace OOP_De_constructor
             (String _name, double _salary) = Employee;
             Console.WriteLine("name=" + _name);
             Console.WriteLine("salaryt=" + _salary);
-        }
+        }*/
 
         class demo
         {
